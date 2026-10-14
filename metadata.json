@@ -1,0 +1,8 @@
+{
+  "name": "Remix TOUCH STONE | Elegant Imitation Jewellery",
+  "description": "TOUCH STONE Indian imitation jewellery for everyday wear, college, and work. Explore earrings, necklaces, bracelets, and rings with direct WhatsApp enquiry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

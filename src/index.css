@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1c1917;
+    background-color: #FAF8F5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    letter-spacing: -0.01em;
+  }
+
+  .font-serif {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.01em;
+  }
+
+  .font-display {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.03em;
+  }
+
+  .font-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar for clean horizontal scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
